@@ -2,8 +2,10 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QPushButton>
-#include <QListWidgetItem>
+#include <QPoint>
+
+#define BACKGROUND_WIDTH 436
+#define BACKGROUND_HEIGHT 859
 
 class Widget : public QWidget
 {
@@ -11,34 +13,24 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = 0);
-
     ~Widget();
-     void Onclict_Alldel();
 
 private slots:
     //信号槽定义函数
-    void Onclict_add();
-    void Onclict_del();
+    void OnAddButtonClick();
+    void OnShowDeleteItemEvent();
+    void OnHideDeleteButtonEvent();
+    void OnDeleteItemWidgetButton();
 
 private:
+    void LoadLostWidget();
+    void LoadContents();
 
-    QPushButton* _addButton;
-    QPushButton* _delButton;
-
-    QIcon* _addIcon;
-    QIcon* _delIcon;
-    QIcon* _guiIcon;
-    QIcon* _sunIcon;
-
-    QPixmap* pix1;
-    QPixmap* pix2;
-    QPixmap* pix3;
-    QPixmap* pix4;
-    QPixmap* pix5;
-
-    QListWidget* _list;
-    QListWidgetItem* Item1;
-    QListWidgetItem* Item2;
+    void paintEvent(QPaintEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *event);
+private:
+    QPoint   _lastMouseSit;
 
 };
 
