@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-03-01T20:08:47
+# Project created by QtCreator 2019-03-29T01:11:56
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = untitled
+TARGET = Task01
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,14 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        widget.cpp \
-    listwidget.cpp \
-    listitemwidget.cpp
+    cal_listwidget.cpp \
+    cal_windget.cpp \
+    cal_listitemwidget.cpp
 
 HEADERS += \
-        widget.h \
-    listwidget.h \
-    listitemwidget.h
+    cal_listwidget.h \
+    cal_windget.h \
+    cal_listitemwidget.h
 
 RESOURCES += \
-    task01.qrc
+    mobilelancher.qrc
+
