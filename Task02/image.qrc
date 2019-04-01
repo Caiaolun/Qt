@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources02/.DS_Store</file>
+        <file>Resources02/01.png</file>
+        <file>Resources02/02.png</file>
+        <file>Resources02/03.png</file>
+        <file>Resources02/04.png</file>
+        <file>Resources02/05.png</file>
+        <file>Resources02/06.png</file>
+        <file>Resources02/07.png</file>
+        <file>Resources02/08.png</file>
+        <file>Resources02/09.png</file>
+        <file>Resources02/10.png</file>
+        <file>Resources02/11.png</file>
+        <file>Resources02/12.png</file>
+        <file>Resources02/13.png</file>
+        <file>Resources02/background.png</file>
+        <file>Resources02/delete_item.png</file>
+    </qresource>
+</RCC>
