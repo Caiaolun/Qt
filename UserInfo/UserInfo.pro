@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-04-01T15:31:27
+# Project created by QtCreator 2019-04-07T14:12:52
 #
 #-------------------------------------------------
 
@@ -8,11 +8,11 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Task02
+TARGET = UserInfo
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
-# any feature of Qt which as been marked as deprecated (the exact warnings
+# any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
@@ -23,13 +23,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += main.cpp \
-    cal_mainwidget.cpp \
-    cal_tablewidget.cpp
+SOURCES += \
+        main.cpp \
+        widget.cpp
 
-HEADERS  += \
-    cal_mainwidget.h \
-    cal_tablewidget.h
+HEADERS += \
+        widget.h
 
 RESOURCES += \
     image.qrc
+

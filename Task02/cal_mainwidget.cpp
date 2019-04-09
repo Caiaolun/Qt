@@ -5,6 +5,8 @@
 #include <QApplication>
 #include <QPainter>
 #include <QMouseEvent>
+#include <QTableWidget>
+
 
 cal_mainwidget::cal_mainwidget(QWidget *parent) : QWidget(parent)
 {
@@ -36,4 +38,8 @@ void cal_mainwidget::mousePressEvent(QMouseEvent *event)
     {
         _point = event->globalPos() - this->frameGeometry().topLeft();
     }
+}
+void cal_mainwidget::CreateTableWidget()
+{
+
 }
